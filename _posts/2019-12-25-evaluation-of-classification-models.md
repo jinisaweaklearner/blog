@@ -1,5 +1,5 @@
 ---
-title: "evaluation of classification models"
+title: "Evaluation of Classification Models"
 last_modified_at: 2019-12-25T16:20:02-05:00
 categories:
   - Machine Learning
