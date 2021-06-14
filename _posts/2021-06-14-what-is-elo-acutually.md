@@ -10,13 +10,13 @@ categories:
 When we talk about the forecasting in sports, ELO model is the most common thing. However, what is ELO actually? Based on Wikipedia, the Elo rating system is a method for calculating the relative skill levels of players such as chess. 
 
 If team A plays against team B, the probability of win for team A is like the equation below. If the ELO score of team A and B are the same, then the probability of win is 50%, which make sense. 
-$$
-P_{Awin}=\frac{1}{1+10^{\left(ELO_{B}-ELO_{A}\right) / 400}}
-$$
+
+$$P_{Awin}=\frac{1}{1+10^{\left(ELO_{B}-ELO_{A}\right) / 400}}$$
+
 The formular is very simialr with logistic function (sigmoid function) with different base.
-$$
-f(x)=\frac{1}{1+e^{-x}} = \frac{e^{x}}{e^{x}+1}
-$$
+
+$$f(x)=\frac{1}{1+e^{-x}} = \frac{e^{x}}{e^{x}+1}$$
+
 The plot shows the clear different between two equations, which brings us the next questions: why the base is 10 and why the score need to be divided by 400?
 
 ![](../assets/images/logistic_vs_elo.png)
