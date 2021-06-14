@@ -11,13 +11,19 @@ When we talk about the forecasting in sports, ELO model is the most common thing
 
 If team A plays against team B, the probability of win for team A is like the equation below. If the ELO score of team A and B are the same, then the probability of win is 50%, which make sense. 
 
-$$ P_{Awin}=\frac{1}{1+10^{\left(ELO_{B}-ELO_{A}\right) / 400}} $$
+$$ 
+P_{Awin}=\frac{1}{1+10^{\left(ELO_{B}-ELO_{A}\right) / 400}} 
+$$
 
 The formular is very simialr with logistic function (sigmoid function) with different base.
 
-$$ f(x)=\frac{1}{1+e^{-x}} = \frac{e^{x}}{e^{x}+1} $$
+$$
+f(x)=\frac{1}{1+e^{-x}} = \frac{e^{x}}{e^{x}+1}
+$$
 
-$$ P\left( x \right) = \frac{e^{-\lambda} \lambda ^x }{x!}, \lambda>0 $$
+$$
+P\left( x \right) = \frac{e^{-\lambda} \lambda ^x }{x!}, \lambda>0
+$$
 
 
 
