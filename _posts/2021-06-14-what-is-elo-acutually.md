@@ -17,6 +17,10 @@ The formular is very simialr with logistic function (sigmoid function) with diff
 
 $$ f(x)=\frac{1}{1+e^{-x}} = \frac{e^{x}}{e^{x}+1} $$
 
+$$ P\left( x \right) = \frac{e^{-\lambda} \lambda ^x }{x!}, \lambda>0 $$
+
+
+
 The plot shows the clear different between two equations, which brings us the next questions: why the base is 10 and why the score need to be divided by 400?
 
 ![](../assets/images/logistic_vs_elo.png)
