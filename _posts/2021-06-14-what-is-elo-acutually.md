@@ -1,7 +1,7 @@
 ---
 
 title: "What is ELO Model Actually"
-last_modified_at: 2021-06-14:20:02-05:00
+last_modified_at: 2021-06-14T16:20:02-05:00
 categories:
   - Statistics
 
