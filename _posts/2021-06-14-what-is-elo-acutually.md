@@ -29,7 +29,7 @@ $$
 
 The plot shows the clear different between two equations, which brings us the next questions: why the base is 10 and why the score need to be divided by 400?
 
-![](../assets/images/logistic_vs_elo.png)
+![] ({{base_path}}/assets/images/logistic_vs_elo.png)
 
 
 
@@ -41,7 +41,7 @@ $$
 
 One of solution is to use a dynamic K based on the number of matches in tennis. [read the artical here](https://www.betfair.com.au/hub/tennis-elo-modelling/)
 
-![](../assets/images/dynamic_k.png)
+![]({{base_path}}/assets/images/dynamic_k.png)
 
 
 
