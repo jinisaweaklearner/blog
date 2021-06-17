@@ -44,21 +44,3 @@ One of solution is to use a dynamic K based on the number of matches in tennis. 
 ![]({{base_path}}/assets/images/dynamic_k.png)
 
 
-
-
-
-### Resources
-
-A few discussions about getting margin of outcome into models below. The idea is initially from autocorrelation in time series forecasting.
-
-Steven Morse: Elo as a statistical learning model https://stmorse.github.io/journal/Elo.html
-
-Steven Morse: Autocorrelation in Elo ratings https://stmorse.github.io/journal/Elo-2.html
-
-538: Introducing NFL Elo Ratings https://fivethirtyeight.com/features/introducing-nfl-elo-ratings/
-
-538: How Our NFL Predictions Work https://fivethirtyeight.com/methodology/how-our-nfl-predictions-work/
-
-538: How We Calculate NBA Elo Ratings https://fivethirtyeight.com/features/how-we-calculate-nba-elo-ratings/
-
-Autocorrelation definition in time series: https://otexts.com/fpp2/autocorrelation.html
