@@ -19,13 +19,10 @@ $$
 f(x)=\frac{1}{1+e^{-x}}
 $$
 
-$$
-\text {elo}_{new}=\mathrm{elo}_{old}+k\left(outcome-\operatorname{P}_{win}\right)
-$$
 
 The plot shows the clear different between two equations, which brings us the next questions: why the base is 10 and why the score need to be divided by 400?
 
-![](https://github.com/jinisaweaklearner/blog/blob/master/assets/images/logistic_vs_elo.png)
+![](https://raw.githubusercontent.com/jinisaweaklearner/blog/master/assets/images/logistic_vs_elo.png)
 
 
 
@@ -37,6 +34,6 @@ $$
 
 One of solution is to use a dynamic K based on the number of matches in tennis. [read the artical here](https://www.betfair.com.au/hub/tennis-elo-modelling/)
 
-![](https://github.com/jinisaweaklearner/blog/blob/master/assets/images/dynamic_k.png)
+![](https://github.com/jinisaweaklearner/blog/blob/master/assets/images/dynamic_k.png?raw=true)
 
 
