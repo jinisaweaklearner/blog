@@ -11,25 +11,19 @@ When we talk about the forecasting in sports, ELO model is the most common thing
 
 If team A plays against team B, the probability of win for team A is like the equation below. If the ELO score of team A and B are the same, then the probability of win is 50%, which make sense. 
 
-$$P_{Awin}=\frac{1}{1+10^{\left(ELO_{B}-ELO_{A}\right) / 400}}$$
-
-$$mean = \frac{\displaystyle\sum_{i=1}^{n} x_{i}}{n}$$ 
+$$
+P_{Awin}=\frac{1}{1+10^{\left(ELO_{B}-ELO_{A}\right) / 400}}
+$$
 
 The formular is very simialr with logistic function (sigmoid function) with different base.
 
 $$
-f(x)=\frac{1}{1+e^{-x}} = \frac{e^{x}}{e^{x}+1}
+f(x)=\frac{1}{1+e^{-x}}
 $$
-
-$$
-P\left( x \right) = \frac{e^{-\lambda} \lambda ^x }{x!}, \lambda>0
-$$
-
-
 
 The plot shows the clear different between two equations, which brings us the next questions: why the base is 10 and why the score need to be divided by 400?
 
-![] ({{base_path}}/assets/images/logistic_vs_elo.png)
+![](https://github.com/jinisaweaklearner/blog/blob/master/assets/images/logistic_vs_elo.png)
 
 
 
@@ -41,6 +35,6 @@ $$
 
 One of solution is to use a dynamic K based on the number of matches in tennis. [read the artical here](https://www.betfair.com.au/hub/tennis-elo-modelling/)
 
-![]({{base_path}}/assets/images/dynamic_k.png)
+![](https://github.com/jinisaweaklearner/blog/blob/master/assets/images/dynamic_k.png)
 
 
