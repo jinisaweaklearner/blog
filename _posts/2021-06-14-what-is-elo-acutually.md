@@ -42,7 +42,6 @@ One of solution is to use a dynamic K based on the number of matches in tennis. 
 
 ### Dynamic K based on Margin
 One of the examples of using dynamic k based on margin is like this in NBA. I am not interested in whethere it works or not. The question is where those numbers come from in the equation. I've no idea so far.
-
 $$
 \mathrm{K}=20 \frac{\left(\mathrm{Margin}_{\text {winner }}+3\right)^{0.8}}{7.5+0.006\left(\text { elo_difference }_{\text {winner }}\right)}
 $$
@@ -51,17 +50,13 @@ $$
 
 Home advanage is a positive factor for all sport games when calculating the probabilty of winning. i.e. The home team can have addtional elo scores. Again, you can setup a constant number first intuitively. Then, you can optimize it as a parameter.
 
-
-###
 ### Year-to-Year Carry-Over
 For yearly sports game, the common issue is that how to handle seasons. The straightforward way is to give a decay. The example:
-
 $$
 Elo_{this_season}=(0.75)*Elo_{last_eason}+(0.25)*1505
 $$
 
 *1505 is the base elo score
-
 
 ### Drawbacks
 - 
