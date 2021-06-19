@@ -7,6 +7,8 @@ categories:
 
 ---
 
+# Introduction
+
 When we talk about the forecasting in sports, ELO model is the most common thing. However, what is ELO actually? Based on Wikipedia, the Elo rating system is a method for calculating the relative skill levels of players such as chess. 
 
 If team A plays against team B, the probability of win for team A is like the equation below. If the ELO score of team A and B are the same, then the probability of win is 50%, which make sense. 
@@ -25,6 +27,7 @@ The plot shows the clear different between two equations, which brings us the ne
 ![](https://raw.githubusercontent.com/jinisaweaklearner/blog/master/assets/images/logistic_vs_elo.png)
 
 
+### K factor
 
 The way of updating the elo scores is shown as following. K is the factor that we need to give in advance. Initially, k is a constant number in different games (e.g. 40 or 32). When k is 40, that means maximum of elo score of each game is 40.
 $$
@@ -37,3 +40,28 @@ One of solution is to use a dynamic K based on the number of matches in tennis. 
 ![](https://github.com/jinisaweaklearner/blog/blob/master/assets/images/dynamic_k.png?raw=true)
 
 
+### Dynamic K based on Margin
+One of the examples of using dynamic k based on margin is like this in NBA. I am not interested in whethere it works or not. The question is where those numbers come from in the equation. I've no idea so far.
+
+$$
+\mathrm{K}=20 \frac{\left(\mathrm{Margin}_{\text {winner }}+3\right)^{0.8}}{7.5+0.006\left(\text { elo_difference }_{\text {winner }}\right)}
+$$
+
+### Home advantage
+
+Home advanage is a positive factor for all sport games when calculating the probabilty of winning. i.e. The home team can have addtional elo scores. Again, you can setup a constant number first intuitively. Then, you can optimize it as a parameter.
+
+
+###
+### Year-to-Year Carry-Over
+For yearly sports game, the common issue is that how to handle seasons. The straightforward way is to give a decay. The example:
+
+$$
+Elo_{this_season}=(0.75)*Elo_{last_eason}+(0.25)*1505
+$$
+
+*1505 is the base elo score
+
+
+### Drawbacks
+- 
