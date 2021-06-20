@@ -7,15 +7,17 @@ categories:
 
 ---
 
-# Introduction
+### Background
 
 When we talk about the forecasting in sports, ELO model is the most common thing. However, what is ELO actually? Based on Wikipedia, the Elo rating system is a method for calculating the relative skill levels of players such as chess. 
 
+### ELO formula
 If team A plays against team B, the probability of win for team A is like the equation below. If the ELO score of team A and B are the same, then the probability of win is 50%, which make sense. 
 $$
 P_{Awin}=\frac{1}{1+10^{\left(ELO_{B}-ELO_{A}\right) / 400}}
 $$
 
+### ELO vs Logestic Regression
 The formular is very simialr with logistic function (sigmoid function) with different base.
 $$
 f(x)=\frac{1}{1+e^{-x}}
@@ -28,7 +30,6 @@ The plot shows the clear different between two equations, which brings us the ne
 
 
 ### K factor
-
 The way of updating the elo scores is shown as following. K is the factor that we need to give in advance. Initially, k is a constant number in different games (e.g. 40 or 32). When k is 40, that means maximum of elo score of each game is 40.
 $$
 \text {elo}_{new}=\mathrm{elo}_{old}+k\left(outcome-\operatorname{P}_{win}\right)
@@ -58,5 +59,6 @@ $$
 
 *1505 is the base elo score
 
-### Drawbacks
-- 
+### Future work
+- For team sports, player-level data is not included. If the key player get injured, the ELO rating system get the info slowly.
+- Definitely ELO is not the only solution, lots of other probabilitic and ML models can work in some scinarios.

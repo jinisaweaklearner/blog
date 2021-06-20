@@ -58,7 +58,7 @@ author:
   name   : "Jin Xiaocheng"
   avatar : "/assets/images/bio-photo.jpg"
   bio    : "Weak Learner, Growth Hacker"
-  location: "Earth"
+  # location: "Earth"
   email   : "xiaochengjin.random@gmail.com"
   links:
     # - label: "Website"
